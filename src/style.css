@@ -1,1 +1,80 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+* {
+  font-family: "Noto Sans";
+}
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #282a36;
+}
+
+p {
+  background: -webkit-linear-gradient(#8be9fd, #bd93f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input,
+button {
+  position: relative;
+  width: 200px;
+  color: #f8f8f2;
+  padding: 10px;
+  border: none;
+  border-radius: 100px;
+  background-color: #282a36;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs::after,
+button::after {
+  content: "";
+  position: absolute;
+  height: 107%;
+  width: 102%;
+  border-radius: 100px;
+  background-image: linear-gradient(to bottom right, #8be9fd, #bd93f9);
+  z-index: -1;
+}
+
+button:hover,
+input:hover {
+  box-shadow: 4px 0 10px #bd93f979, -4px 0 10px #8be8fd79;
+  border-color: #8be9fd;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+.inputs {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.options {
+  background-color: #44475a;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 1;
+}
+.cardContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.cardDiv {
+  background-color: #44475a;
+  font-size: 30px;
+  border-radius: 12px;
+}
