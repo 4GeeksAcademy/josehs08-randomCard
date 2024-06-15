@@ -41,7 +41,6 @@ button::after {
   background-image: linear-gradient(to bottom right, #8be9fd, #bd93f9);
   z-index: -1;
 }
-
 button:hover,
 input:hover {
   box-shadow: 4px 0 10px #bd93f979, -4px 0 10px #8be8fd79;
@@ -58,6 +57,7 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 .options {
